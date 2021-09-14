@@ -19,34 +19,29 @@ const About = styled.nav`
   }
 
   .name {
-    color: #0d2538;
-
+    color: #d4af37;
     margin-bottom: 10px;
     font-size: 36px;
     text-align: center;
   }
 
   .position {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 24px;
-    color: #0d2538;
-    text-align: center;
-  }
-
-  .location {
-    font-weight: 700;
-
-    color: #0d2538;
-    margin-bottom: 25px;
+    color: #cdccd1;
     text-align: center;
   }
 
   .text {
+    color: #cdccd1;
     font-size: 20px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    @media (min-width: 768px) {
+      font-size: 26px;
+    }
   }
 `;
 
@@ -62,7 +57,6 @@ const AboutMe = () => {
         </div>
         <h1 className="name">Zharkynbek Idirisov</h1>
         <p className="position">Frontend Developer</p>
-        <p className="location">Hamburg, Germany</p>
 
         <p className="text">
           I am a Front-End developer looking for a full-time position in a

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-import logo from "../../images/logo.png";
 
 const Nav = styled.nav`
   width: 100%;
@@ -10,12 +9,18 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  @media (min-width: 768px) {
+    justify-content: space-around;
+  }
 
   .logo {
-    padding: 15px 0;
+    color: #d4af37;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 10px 0;
     text-align: center;
     @media (min-width: 768px) {
-      padding-left: 50px;
+      font-size: 30px;
     }
   }
 `;
@@ -23,9 +28,7 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">
-        <img src={logo} alt="" width="40" />
-      </div>
+      <div className="logo">&#10094; &#9761; &#10072; &#10095;</div>
       <Burger />
     </Nav>
   );

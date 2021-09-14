@@ -7,12 +7,13 @@ const Ul = styled.ul`
   flex-flow: row nawrap;
 
   li {
-    padding: 18px 10px;
+    padding: 20px 10px;
+    color: #d4af37;
   }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: #cdccd1;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -23,7 +24,7 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: #fff;
+      color: #1e3250;
     }
   }
 `;

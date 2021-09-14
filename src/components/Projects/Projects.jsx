@@ -24,8 +24,12 @@ const Project = styled.nav`
     text-align: center;
     margin-top: 20px;
     font-weight: 700;
-    font-size: 32px;
-    color: #0d2538;
+    font-size: 28px;
+    color: #d3ffce;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   .projectImg {
@@ -53,25 +57,25 @@ const Project = styled.nav`
 const Projects = () => {
   return (
     <Project>
-      <h1 className="projectTitel">Projects</h1>
+      <h1 className="projectTitel">&#10100; Projects &#10101;</h1>
       <div className="aboutWrapper">
-        <ul>
-          <li>
+        <ul className="project-list">
+          <li className="project-item">
             <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
               <img src={webStudio} alt="" className="projectImg" />
             </a>
           </li>
-          <li>
+          <li className="project-item">
             <a href="https://sergey-proskurnin.github.io/team-project-ice-cream/">
               <img src={iceCream} alt="" className="projectImg" />
             </a>
           </li>
-          <li>
+          <li className="project-item">
             <a href="https://sergey-proskurnin.github.io/team-project-event-booster/">
               <img src={event} alt="" className="projectImg" />
             </a>
           </li>
-          <li>
+          <li className="project-item">
             <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
               <img src={phonebook} alt="" className="projectImg" />
             </a>
