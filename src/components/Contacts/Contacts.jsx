@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Contact = styled.nav`
+  .container {
+    margin-bottom: 30px;
+  }
+
   a {
     text-decoration: none;
     color: #ccc;
@@ -24,8 +28,11 @@ const Contact = styled.nav`
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
     @media (min-width: 768px) {
-      font-size: 20px;
+      font-size: 22px;
     }
   }
 `;
@@ -35,7 +42,7 @@ const Contacts = () => {
     <Contact>
       {" "}
       <h1>&#10100; CONTACTS &#10101;</h1>
-      <div>
+      <div className="container" id="contact">
         <div className="contacts">
           <a class="contacts-link" href="tel:4917668151293" rel="noreferrer">
             &#9742; +49 176 68151293

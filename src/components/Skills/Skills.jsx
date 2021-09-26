@@ -3,9 +3,14 @@ import styled from "styled-components";
 
 const Skill = styled.nav`
   li {
+    list-style: none;
+    font-size: 18px;
     margin-bottom: 10px;
     font-weight: 400;
     color: #cdccd1;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @media (min-width: 768px) {
       font-size: 28px;
@@ -30,7 +35,7 @@ const Skill = styled.nav`
   }
   h2 {
     font-size: 20px;
-    color: #cdccd1;
+    color: #d4af37;
 
     text-align: center;
     margin-top: 15px;
@@ -45,17 +50,18 @@ const Skills = () => {
   return (
     <Skill>
       {" "}
-      <div>
+      <div id="skills">
         <h1>&#10100; SKILLS &#10101;</h1>
+        <h2>&lsaquo; TECH-SKILLS &rsaquo;</h2>
         <ul className="skills">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>SASS</li>
-          <li>GIT</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
+          <li># HTML5</li>
+          <li># CSS3</li>
+          <li># SASS</li>
+          <li># GIT</li>
+          <li># JavaScript</li>
+          <li># React.js</li>
         </ul>
-        <h2>SOFT-SKILLS</h2>
+        <h2>&lsaquo; SOFT-SKILLS &rsaquo;</h2>
         <ul className="skills">
           <li>Teamwork</li>
           <li>Creativity</li>

@@ -5,10 +5,13 @@ import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
 import Languages from "../components/Languages/Languages";
 import Contacts from "../components/Contacts/Contacts";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <AboutMe />
       <Projects />

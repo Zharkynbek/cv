@@ -48,7 +48,7 @@ const About = styled.nav`
 const AboutMe = () => {
   return (
     <About>
-      <div className="aboutWrapper">
+      <div className="aboutWrapper" id="aboutMe">
         <div className="imgWrapper">
           <div className="avatar">
             {" "}

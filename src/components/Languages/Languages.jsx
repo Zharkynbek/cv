@@ -3,8 +3,15 @@ import styled from "styled-components";
 
 const Language = styled.nav`
   li {
+    font-size: 18px;
     margin-bottom: 10px;
     color: #cdccd1;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   h1 {
     font-weight: 700;
@@ -36,7 +43,7 @@ const Languages = () => {
   return (
     <Language>
       <h1>&#10100; LANGUAGES &#10101;</h1>
-      <ul className="languages">
+      <ul className="languages" id="languages">
         <li>German - Fluent</li>
         <li>Russian - Fluent</li>
         <li>English - Intermediate</li>

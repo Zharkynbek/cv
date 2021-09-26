@@ -6,8 +6,26 @@ import event from "../../images/event.png";
 import phonebook from "../../images/phonebook.png";
 
 const Project = styled.nav`
+  .skills {
+    text-align: center;
+    color: #cdccd1;
+  }
+
+  .project-list {
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
   li {
     list-style: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 25px;
+    }
   }
   .aboutWrapper {
     align-items: center;
@@ -16,7 +34,7 @@ const Project = styled.nav`
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8%;
+    // border-radius: 8%;
     overflow: hidden;
   }
 
@@ -37,7 +55,6 @@ const Project = styled.nav`
     justify-content: center;
     width: 300px;
     height: 180px;
-    margin-bottom: 20px;
     border: 1px solid #0d2538;
     border-radius: 10px;
     overflow: hidden;
@@ -45,6 +62,10 @@ const Project = styled.nav`
     @media (min-width: 768px) {
       width: 500px;
       height: 280px;
+    }
+    @media (min-width: 1200px) {
+      width: 300px;
+      height: 180px;
     }
 
     &:hover,
@@ -57,28 +78,34 @@ const Project = styled.nav`
 const Projects = () => {
   return (
     <Project>
-      <h1 className="projectTitel">&#10100; Projects &#10101;</h1>
+      <h1 className="projectTitel" id="projects">
+        &#10100; Projects &#10101;
+      </h1>
       <div className="aboutWrapper">
         <ul className="project-list">
           <li className="project-item">
             <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
               <img src={webStudio} alt="" className="projectImg" />
             </a>
+            <p className="skills">&lang; HTML, SCSS &rang;</p>
           </li>
           <li className="project-item">
             <a href="https://sergey-proskurnin.github.io/team-project-ice-cream/">
               <img src={iceCream} alt="" className="projectImg" />
             </a>
+            <p className="skills">&lang; HTML, SCSS, JS, jquery &rang;</p>
           </li>
           <li className="project-item">
             <a href="https://sergey-proskurnin.github.io/team-project-event-booster/">
               <img src={event} alt="" className="projectImg" />
             </a>
+            <p className="skills">&lang; HTML, SCSS, JS, Firebase &rang;</p>
           </li>
           <li className="project-item">
             <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
               <img src={phonebook} alt="" className="projectImg" />
             </a>
+            <p className="skills">&lang; HTML, SCSS, JS, React &rang;</p>
           </li>
         </ul>
       </div>
