@@ -14,6 +14,7 @@ const Nav = styled.nav`
   }
 
   .logo {
+    cursor: pointer;
     color: #d4af37;
     font-weight: 700;
     font-size: 26px;
@@ -28,7 +29,14 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">&#10094; &#9761; &#10072; &#10095;</div>
+      <div
+        className="logo"
+        onClick={() => {
+          alert("you clicked on my logo:)");
+        }}
+      >
+        &#10094; &#9761; &#10072; &#10095;
+      </div>
       <Burger />
     </Nav>
   );
