@@ -84,25 +84,34 @@ const Projects = () => {
       <div className="aboutWrapper">
         <ul className="project-list">
           <li className="project-item">
-            <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
+            <a
+              target="_blank"
+              href="https://zharkynbek.github.io/goit-markup-hw-08/"
+            >
               <img src={webStudio} alt="" className="projectImg" />
             </a>
             <p className="skills">&lang; HTML, SCSS &rang;</p>
           </li>
           <li className="project-item">
-            <a href="https://sergey-proskurnin.github.io/team-project-ice-cream/">
+            <a
+              target="_blank"
+              href="https://sergey-proskurnin.github.io/team-project-ice-cream/"
+            >
               <img src={iceCream} alt="" className="projectImg" />
             </a>
             <p className="skills">&lang; HTML, SCSS, JS, jquery &rang;</p>
           </li>
           <li className="project-item">
-            <a href="https://sergey-proskurnin.github.io/team-project-event-booster/">
+            <a
+              target="_blank"
+              href="https://sergey-proskurnin.github.io/team-project-event-booster/"
+            >
               <img src={event} alt="" className="projectImg" />
             </a>
             <p className="skills">&lang; HTML, SCSS, JS, Firebase &rang;</p>
           </li>
           <li className="project-item">
-            <a href="https://zharkynbek.github.io/goit-markup-hw-08/">
+            <a target="_blank" href="https://phone-hw09.netlify.app/">
               <img src={phonebook} alt="" className="projectImg" />
             </a>
             <p className="skills">&lang; HTML, SCSS, JS, React &rang;</p>
