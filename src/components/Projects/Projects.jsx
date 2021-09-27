@@ -86,6 +86,7 @@ const Projects = () => {
           <li className="project-item">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://zharkynbek.github.io/goit-markup-hw-08/"
             >
               <img src={webStudio} alt="" className="projectImg" />
@@ -95,6 +96,7 @@ const Projects = () => {
           <li className="project-item">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://sergey-proskurnin.github.io/team-project-ice-cream/"
             >
               <img src={iceCream} alt="" className="projectImg" />
@@ -104,6 +106,7 @@ const Projects = () => {
           <li className="project-item">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://sergey-proskurnin.github.io/team-project-event-booster/"
             >
               <img src={event} alt="" className="projectImg" />
@@ -111,7 +114,11 @@ const Projects = () => {
             <p className="skills">&lang; HTML, SCSS, JS, Firebase &rang;</p>
           </li>
           <li className="project-item">
-            <a target="_blank" href="https://phone-hw09.netlify.app/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://phone-hw09.netlify.app/"
+            >
               <img src={phonebook} alt="" className="projectImg" />
             </a>
             <p className="skills">&lang; HTML, SCSS, JS, React &rang;</p>
